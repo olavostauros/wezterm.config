@@ -15,7 +15,7 @@ if conf_file then
         package.path,
         conf_path .. "?" .. dir_sep .. "init.lua",
         conf_path .. "?.lua",
-    })
+    }, ";")
 end
 
 local act = wezterm.action
